@@ -12,7 +12,7 @@ app.set('view engine', 'ejs'); // Use ejs as it's new engine
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://admin-harsh:todolist123@cluster0.fpehk.mongodb.net/todolistDB", { useNewUrlParser: true });
 
 const itemsSchema = new mongoose.Schema({ //First schema is created then model
     name: String
